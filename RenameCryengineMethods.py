@@ -1,3 +1,8 @@
+# This script is designed to automatically reverse cryengine functions with left over debug strings.
+# It parses every string for the pattern ClassName::MethodName and automatically renames the method to it's proper name. (This is accurate in 99% of cases)
+# Finally, it dumps the address + actual name of the function to a .txt, which is useful in other programs.
+# I personally used the .txt file for my Reclass.NET plugin, which parses the txt file and automatically renames/identifies applicable Vtable methods and classes. This also makes code generation very clean/
+
 import idautils
 import idc
 from idaapi import *
