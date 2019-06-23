@@ -36,4 +36,4 @@ for string in STRINGS:
             print("RandomName: {}, ActualName: {}".format(name, programString))
             address = idaapi.GetFunctionAttr(xref.frm, idaapi.FUNCATTR_START)
             print(address)
-            # idc.MakeNameEx(address, programString, 0x00)
+            idc.MakeNameEx(address, programString, 0x00)
